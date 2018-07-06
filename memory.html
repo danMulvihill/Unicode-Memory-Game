@@ -32,13 +32,22 @@ div#memory_board > div{
 // Scripted By Adam Khoury in connection with the following video tutorial:
 // http://www.youtube.com/watch?v=c_ohDPWmsM0
 
-let start_chars = [945, 1488,9760, 9812, 12353, 19968]
-let end_chars =   [966, 1514, 9775, 9839, 12438, 40700]
-let char_description = [ "Greek", 
+let start_chars = [33, 945,1040, 1488,2308,3584,5024,5120,9648,9728, 10241, 12353,12448, 19968]
+let end_chars =   [126, 966,1103, 1514,2361,3635,5108,5759,9727, 9918, 10303,12438, 12543, 40700]
+let char_description = [ 
+			"ASCII",
+			"Greek", 
+            "Cyrillic",
             "Hebrew",
-            "religion, health & politics" ,
-            "music & games",
+            "Devanagari",
+            "Thai",
+            "Cherokee",
+            "Cree",
+            "Shapes",
+            "Miscellaneous Symbols",
+            "Braille",
             "Hiragana",
+            "Katakana",
             "Chinese" ]
 //randomly picks a set of chars
 let set_picked = Math.floor(Math.random() * start_chars.length)
